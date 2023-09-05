@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
+        <header>
+            <h1><a href="">Aakash's Blog</a></h1>
+            <nav>
+                <a href=""> All Posts </a>
+            </nav>
+        </header>
         {% block page_title %}
         My blogs
         {% endblock %}
     </title>
     <link rel="stylesheet" href="{% static "base.css" %}">
-    {% block css_files %}{% endblock css_files %}
+    {% block css_files %}
+    {% endblock%}
 </head>
 <body>
     {% block page_content %}{% endblock page_content %}

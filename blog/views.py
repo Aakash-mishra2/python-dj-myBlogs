@@ -18,11 +18,8 @@ def index(request):
     })
 
 
-def blogByNumber(request, blogNo):
-    blogs = list(Allblogs.keys())
-    selectedBlog = blogs[blogNo - 1]
-    redirect_path = reverse("read", args=[selectedBlog])
-    return HttpResponseRedirect(redirect_path)
+def blogs(request):
+    pass
 
 
 def readBlog(request, blog):

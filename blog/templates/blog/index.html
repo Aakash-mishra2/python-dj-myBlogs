@@ -3,11 +3,52 @@
 {% block page_title%}
 Homepage
 {% endblock %}
+
 {% block css_files %}
-<link rel="stylesheet" href="{% static "blog/blog.css" %}">
+<link rel="stylesheet" href="{% static "blog/blog.css" %}" />
 {%endblock%}
+
+
 {% block page_content%}
-<div class="master-box">
+<header>
+    <h1><a href="">Aakash's Blog</a></h1>
+    <nav>
+        <a href=""> All Posts </a>
+    </nav>
+</header>
+<section id="welcome">
+    <header>
+        <img scr="https://drive.google.com/file/d/1p-t3WJOOO-ywfku6Mta2Xp5soiNs4q5E/view?usp=drive_link" alt="Aakash-author of blog" />
+        <h2> Aakash's Blog </h2>
+    </header>
+</section>
+<section id="latest-posts">
+    <h2>My latest Thoughts </h2>
+    <ul>
+        <li>
+            <article class="post">
+                <a href="">
+                <img src="{% static "blog/images/mountains.jpg"%}" alt="Mountain Hiking" />
+                <div class="post_comment">
+                    <h3>Mountain Hiking </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum ultrices mi vitae hendrerit. Cras in eros quis leo vulputate porta pharetra sit amet velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                        Maecenas non justo rhoncus, dignissim tortor ac, dictum tortor. Pellentesque suscipit tellus non justo semper viverra. Cras non sollicitudin sapien. Nunc ut quam eget sapien iaculis dapibus. Suspendisse nec imperdiet libero. 
+                        Donec quis dolor molestie, suscipit nulla congue, pretium lectus. Vivamus feugiat est eget est lobortis, in ultricies sem dictum. Sed ante tellus, commodo ac est a, tempus lobortis mauris. Proin aliquet lacus in ipsum tempus, vel posuere est posuere. 
+                        Phasellus nec sem eget massa scelerisque suscipit quis id lorem. Mauris pellentesque, lectus ut commodo lobortis, ligula risus bibendum enim, at efficitur ante diam sed purus.
+                    </p>
+            </article>
+        </li>
+    </ul>
+</section>
+<section id="about">
+    <h2>What I do</h2>
+    <p>
+        I love programming, I love to do new things and observe changes or mistakes.!
+    </p>
+    </section>
+{% endblock %}
+{% comment %} <div class="master-box">
     <div class="aboutme">
         <img src="" alt = "Aakash photo">
         <h1>About me</h1>
@@ -20,4 +61,4 @@ Homepage
         {% endfor %}
     </div>
 </div>
-{% endblock %}
+{% endblock %} {% endcomment %}
