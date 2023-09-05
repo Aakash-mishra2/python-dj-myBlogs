@@ -1,0 +1,15 @@
+div {
+    background-color: white;
+}
+
+.master-box {
+    margin: 2rem;
+    width: 90%;
+    max-width: 50rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}

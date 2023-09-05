@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto+Slab&display=swap');
+
+html {
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    margin: 0;
+    background-color: #360034;
+    background-image: url("https://transparenttextures.com/patterns/food.png");
+}

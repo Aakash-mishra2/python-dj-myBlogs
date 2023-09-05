@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_title%}
+Homepage
+{% endblock %}
+{% block css_files %}
+<link rel="stylesheet" href="{% static "blog/blog.css" %}">
+{%endblock%}
+{% block page_content%}
+<div class="master-box">
+    <div class="aboutme">
+        <img src="" alt = "Aakash photo">
+        <h1>About me</h1>
+    </div>
+    <div class="myBlogs">
+        {% for blog in listOfBlogs%}
+            <div>
+                <a href="{% url "read" blog %}">{{ blog | title }}</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
