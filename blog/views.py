@@ -74,8 +74,13 @@ def index(request):
 
 
 def blogs(request):
-    return render(request, "blog/all-posts.html")
+    return render(request, "blog/all-posts.html", {
+        "all_posts": Allblogs
+    })
 
 
 def readBlog(request, slug):
-    return render(request, "blog/single-post.html")
+    identified_post = next(blog for blog in Allblogs if blog['slug'] == slug)
+    return render(request, "blog/single-post.html", {
+        "post": identified_post
+    })
