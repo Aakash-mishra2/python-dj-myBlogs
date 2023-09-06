@@ -19,16 +19,8 @@ def index(request):
 
 
 def blogs(request):
-    pass
+    return render(request, "blog/all-posts.html")
 
 
-def readBlog(request, blog):
-    try:
-        blog_title = blog
-        blog_content = Allblogs[blog]
-        return render(request, "blog/blog.html", {
-            "selected_blog": blog_title,
-            "content": blog_content
-        })
-    except:
-        return Http404()
+def readBlog(request, slug):
+    return render(request, "blog/single-post.html")

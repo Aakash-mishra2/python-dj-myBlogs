@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}
+This post title
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "blog/single-post.css" %}" />
+{% endblock %}
+
+{% block page_content %}
+<section id="summary">
+    <h2> Post Title </h2>
+    <article>
+        <img src="{% static "blog/images/mountains.jpg" %}" alt="Post Titile" />
+        <address> By Aakash </address>
+        <div>
+            Last updated on <time>July 19th </time>
+        </div>
+    </article>
+</section>
+<main>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere odio velit, vehicula pharetra ex euismod ac. Ut sit amet tellus id dolor finibus sodales. Maecenas eu lobortis mauris. Quisque vestibulum magna enim, id pharetra nisi eleifend vitae. Phasellus pretium condimentum est. Suspendisse a bibendum velit. Cras a ipsum malesuada, sollicitudin mauris vel, ornare nunc.
+    </p>
+    <p>
+        Fusce non nulla nec dolor imperdiet viverra eu non arcu. Nulla sit amet urna mi. Nunc blandit tortor ut dui scelerisque malesuada quis eget est. Nam ac diam nunc. Vestibulum a ullamcorper magna, non vulputate ligula. Quisque mollis odio placerat augue consectetur, eget ultricies mauris sollicitudin. Nam lorem neque, dignissim ut nisl et, pharetra vehicula odio. Nam sagittis risus euismod neque venenatis tempus.
+    </p>
+    <p>
+        Etiam vel pulvinar diam. Nulla elementum auctor tortor, a iaculis leo rhoncus in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis a libero diam. Maecenas a nulla ut purus lobortis gravida. Duis eleifend quam eros, sed laoreet est laoreet gravida. In sodales dolor vitae quam placerat consectetur. Donec venenatis dui vitae urna porttitor, sit amet consectetur ex lacinia. Duis aliquam porta posuere. Morbi sodales ante ex. Sed erat est, gravida scelerisque pretium a, ultricies vel erat. Nulla facilisi.
+    </p>
+</main>
+{% endblock %}
